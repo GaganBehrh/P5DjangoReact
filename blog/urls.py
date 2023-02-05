@@ -2,5 +2,5 @@ from django.contrib import path
 from django.views.generic import TemplateView
 app_name = 'blog'
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('',TemplateView.as_view(template_name="blog/index.html")),
 ]
