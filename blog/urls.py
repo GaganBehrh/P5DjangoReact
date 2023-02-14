@@ -1,4 +1,4 @@
-from django.contrib import path
+from django.urls import path
 from django.views.generic import TemplateView
 app_name = 'blog'
 urlpatterns = [
