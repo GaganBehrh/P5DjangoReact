@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-0vns!-aaz!6ve&)&dr6p3puzl-np)+@u!#9v2cll916nlqr3po
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-gaganbehrh-p5djangoreac-htmk5mlvb8c.ws-eu89b.gitpod.io']
 
 
 # Application definition
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/ 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
